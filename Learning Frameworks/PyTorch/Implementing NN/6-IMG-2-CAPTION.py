@@ -1,12 +1,12 @@
 import os  # when loading file paths
+
 import pandas as pd  # for lookup in annotation file
 import spacy  # for tokenizer
 import torch
+import torchvision.transforms as transforms
+from PIL import Image  # Load img
 from torch.nn.utils.rnn import pad_sequence  # pad batch
 from torch.utils.data import DataLoader, Dataset
-from PIL import Image  # Load img
-import torchvision.transforms as transforms
-
 
 # We want to convert text -> numerical values
 # 1. We need a Vocabulary mapping each word to a index
@@ -31,6 +31,7 @@ class Vocabulary:
     @staticmethod
     def tokenizer_eng(text):
         return [tok.text.lower() for tok in spacy_eng.tokenizer(text)]
+
 
     def build_vocabulary(self, sentence_list):
         frequencies = {}
