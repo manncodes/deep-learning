@@ -1,6 +1,8 @@
 from pathlib import Path
 
-ignore = ['.git','.ipynb_checkpoints','test','dataset']
+# edit the below array to add directories and folders you want to exclude
+ignore = ['.git', '.ipynb_checkpoints', 'test', 'dataset']
+
 
 class DisplayablePath(object):
     display_filename_prefix_middle = '├──'
@@ -12,10 +14,7 @@ class DisplayablePath(object):
         self.path = Path(str(path))
         self.parent = parent_path
         self.is_last = is_last
-        if self.parent:
-            self.depth = self.parent.depth + 1
-        else:
-            self.depth = 0
+        self.depth = self.parent.depth + 1 if self.parent else 0
 
     @property
     def displayname(self):
@@ -32,7 +31,7 @@ class DisplayablePath(object):
         yield displayable_root
 
         children = sorted([path for path in root.iterdir()
-                                   if criteria(path)], key=lambda s: str(s).lower())
+                           if criteria(path)], key=lambda s: str(s).lower())
         for count, path in enumerate(children, start=1):
             is_last = count == len(children)
             if path.is_dir():
@@ -80,7 +79,7 @@ class DisplayablePath(object):
 paths = DisplayablePath.make_tree(Path('.'))
 tree = [path.displayable() for path in paths]
 
-with open('README.md', 'w+',encoding="utf-8") as f: #r+ does the work of rw
+with open('README.md', 'w+', encoding="utf-8") as f:  # r+ does the work of rw
     f.write('# My Journey to learn Deep Learning\n')
     f.write('\n')
     f.write('## Directory Structure\n')
@@ -90,4 +89,3 @@ with open('README.md', 'w+',encoding="utf-8") as f: #r+ does the work of rw
     for line in tree:
         f.write(line+'\n')
     f.write('```')
-    
