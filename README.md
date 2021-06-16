@@ -19,5 +19,8 @@
 │           ├── initializing_tensor.ipynb
 │           └── other_functionality_of_tensors.ipynb
 ├── README.md
+├── Tensorboard/
+│   ├── 1-visualizing-loss_and_acc.ipynb
+│   └── 2-Hyperparameter-finetuning.ipynb
 └── tree_copy.py
 ```
