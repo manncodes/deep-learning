@@ -7,6 +7,10 @@
 ├── Learning Frameworks/
 │   └── PyTorch/
 │       ├── Popular Implementations/
+│       │   ├── LeNet.py
+│       │   ├── README.md
+│       │   ├── tempCodeRunnerFile.py
+│       │   └── VGG16.py
 │       ├── PyTorch Tutorials/
 │       │   ├── 1-simple-NN.ipynb
 │       │   ├── 2-CNN.ipynb
