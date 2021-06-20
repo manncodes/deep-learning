@@ -7,8 +7,10 @@
 ├── Learning Frameworks/
 │   └── PyTorch/
 │       ├── Popular Implementations/
+│       │   ├── InceptionNet.py
 │       │   ├── LeNet.py
 │       │   ├── README.md
+│       │   ├── ResNet.py
 │       │   └── VGG.py
 │       ├── PyTorch Tutorials/
 │       │   ├── 1-simple-NN.ipynb
