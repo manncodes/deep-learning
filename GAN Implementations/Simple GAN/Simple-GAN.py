@@ -77,7 +77,7 @@ for epoch in range(num_epochs):
         disc_real = disc(real).view(-1)
         lossD_real = loss_fn(disc_real, torch.ones_like(disc_real))
         disc_fake = disc(fake).view(-1)  # to reutilize fake in generator do fake.detach
-        lossD_fake = loss_fn(disc_fake, torch.ones_like(disc_fake))
+        lossD_fake = loss_fn(disc_fake, torch.zeros_like(disc_fake))
         lossD = (lossD_real + lossD_fake) / 2
 
         # Disc-backward

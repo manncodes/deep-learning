@@ -3,3 +3,5 @@
 *.tfevents.*
 **/tempCodeRunnerFile.py
 **/logs/*
+**/*.zip
+**/celeb_dataset
