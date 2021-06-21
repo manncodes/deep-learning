@@ -1,7 +1,15 @@
 from pathlib import Path
 
 # edit the below array to add directories and folders you want to exclude
-ignore = [".git", ".ipynb_checkpoints", "test", "dataset", "runs", "tempcoderunner"]
+ignore = [
+    ".git",
+    "logs",
+    ".ipynb_checkpoints",
+    "test",
+    "dataset",
+    "runs",
+    "tempcoderunner",
+]
 
 
 class DisplayablePath(object):

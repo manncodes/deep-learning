@@ -2,3 +2,4 @@
 **/dataset
 *.tfevents.*
 **/tempCodeRunnerFile.py
+**/logs/*
