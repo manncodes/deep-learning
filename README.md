@@ -4,6 +4,33 @@
 
 ```bash
 /
+├── Course work/
+│   └── NVIDIA - Fundamentals of Deep Learning/
+│       ├── 01_mnist.ipynb
+│       ├── 02_asl.ipynb
+│       ├── 03_asl_cnn.ipynb
+│       ├── 04a_asl_augmentation.ipynb
+│       ├── 04b_asl_predictions.ipynb
+│       ├── 05a_doggy_door.ipynb
+│       ├── 05b_presidential_doggy_door.ipynb
+│       ├── 06_headline_generator.ipynb
+│       ├── 07_assessment.ipynb
+│       ├── 4_Finetuning.ipynb
+│       ├── 5_CustomDataSet.ipynb
+│       ├── README.md
+│       └── Slides/
+│           ├── slide_1.pptx
+│           ├── slide_2.pptx
+│           ├── slide_3.pptx
+│           ├── slide_5.pptx
+│           ├── slides_4.pptx
+│           └── slides_6.pptx
+├── GAN Implementations/
+│   ├── DCGAN/
+│   │   ├── model.py
+│   │   └── train.py
+│   └── Simple GAN/
+│       └── Simple-GAN.py
 ├── Learning Frameworks/
 │   └── PyTorch/
 │       ├── Popular Implementations/
