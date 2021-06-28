@@ -5,3 +5,4 @@
 **/logs/*
 **/*.zip
 **/celeb_dataset
+**/__pycache__
