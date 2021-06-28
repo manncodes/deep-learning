@@ -9,6 +9,7 @@ ignore = [
     "dataset",
     "runs",
     "tempcoderunner",
+    "__pycache__",
 ]
 
 

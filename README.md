@@ -29,8 +29,15 @@
 │   ├── DCGAN/
 │   │   ├── model.py
 │   │   └── train.py
-│   └── Simple GAN/
-│       └── Simple-GAN.py
+│   ├── Simple GAN/
+│   │   └── Simple-GAN.py
+│   ├── WGAN/
+│   │   ├── model.py
+│   │   └── train.py
+│   └── WGAN-GP/
+│       ├── model.py
+│       ├── train.py
+│       └── utils.py
 ├── Learning Frameworks/
 │   └── PyTorch/
 │       ├── Popular Implementations/
