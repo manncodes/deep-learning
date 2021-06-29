@@ -26,6 +26,10 @@
 │           ├── slides_4.pptx
 │           └── slides_6.pptx
 ├── GAN Implementations/
+│   ├── C-GAN/
+│   │   ├── model.py
+│   │   ├── train.py
+│   │   └── utils.py
 │   ├── DCGAN/
 │   │   ├── model.py
 │   │   └── train.py
