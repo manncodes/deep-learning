@@ -6,3 +6,4 @@
 **/*.zip
 **/celeb_dataset
 **/__pycache__
+**/cmp.py
