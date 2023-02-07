@@ -82,6 +82,14 @@
 │           ├── initializing_tensor.ipynb
 │           └── other_functionality_of_tensors.ipynb
 ├── README.md
+├── RL/
+│   ├── gym/
+│   │   ├── cartpole.py
+│   │   └── mario.ipynb
+│   ├── ppo.ipynb
+│   └── Q-learning/
+│       ├── env_run.py
+│       └── model.py
 ├── Tensorboard/
 │   ├── 1-visualizing-loss_and_acc.ipynb
 │   ├── 2-Hyperparameter-finetuning.ipynb
